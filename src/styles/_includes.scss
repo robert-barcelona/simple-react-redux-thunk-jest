@@ -31,7 +31,7 @@ $app-font: "Big Shoulders Text", Helvetica, san-serif;
   .friend-button {
     @include app-button;
     margin-left: 20px;
-    margin-top: 19px;
+    margin-top: 17px;
   }
 }
 
@@ -46,6 +46,7 @@ $app-font: "Big Shoulders Text", Helvetica, san-serif;
   .friend-image {
     max-width: 300px;
     max-height: 300px;
+    border:1px solid #ffffff;
   }
 
   .friend-title {

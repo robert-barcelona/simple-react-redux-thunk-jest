@@ -1,5 +1,5 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faMapPin,
   faCity,
@@ -7,13 +7,13 @@ import {
   faPhone,
   faSortNumericUpAlt,
   faAt
-} from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons"
 
-import friendPropTypes from "./friendPropTypes";
-import "./friend.scss";
+import friendPropTypes from "./friendPropTypes"
+import "./friend.scss"
 
 const Friend = props => {
-  const { friend } = props;
+  const { friend } = props
 
   return (
     <div className="card friend-card">
@@ -32,14 +32,14 @@ const Friend = props => {
             <p className="title friend-title is-4">
               {friend.name.first} {friend.name.last}
             </p>
-            <p className="subtitle friend-subtitle is-6">
-              <FontAwesomeIcon icon={faAt} />
-              &nbsp;&nbsp;{friend.email}
-            </p>
           </div>
         </div>
 
         <div className="content">
+          <p>
+            <FontAwesomeIcon icon={faAt} />
+            &nbsp;&nbsp;Email: {friend.email}
+          </p>
           <p>
             <FontAwesomeIcon icon={faMapPin} />
             &nbsp;&nbsp;Address: {friend.location.street}
@@ -63,11 +63,11 @@ const Friend = props => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 Friend.propTypes = {
   friend: friendPropTypes
-};
+}
 
-export default Friend;
+export default Friend

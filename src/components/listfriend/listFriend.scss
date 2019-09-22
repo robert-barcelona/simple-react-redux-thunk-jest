@@ -3,7 +3,7 @@
 
 .list-friend {
   $background-color: rgb(110, 135, 255);
-  @include friend-container($background-color,300px,425px);
+  @include friend-container($background-color,300px,450px);
   .friend-card {
     @include friend-card($background-color);
   }
