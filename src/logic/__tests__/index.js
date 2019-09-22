@@ -1,9 +1,10 @@
 import axios from "axios";
 import { logicGetFriend } from "../index";
 import userData from "../../../data/userdata.json";
-//jest.mock('axios');
 
-beforeEach(()=> axios.get.reset())
+beforeEach(() =>{
+  axios.get.mockClear()
+})
 
 test("logicGetFriend fetches correct results from randomme api", async () => {
   const mockedData = { data: { results: [userData] } };
@@ -28,6 +29,14 @@ test("logicGetFriend throws error when no results returned by axios", async () =
 });
 
 test("logicGetFriend throws error when no results returned by axios", async () => {
+  const errorMessage = "oops! Maybe a 404"
+  axios.get.mockImplementationOnce(() => {throw new Error(errorMessage);});
+  await expect(logicGetFriend()).rejects.toThrow(
+    errorMessage
+  );
+});
+
+test("logicGetFriend throws error when axios throws an error", async () => {
   const mockedData = undefined;
   axios.get.mockImplementationOnce(() => Promise.resolve(mockedData));
   await expect(logicGetFriend()).rejects.toThrow(
