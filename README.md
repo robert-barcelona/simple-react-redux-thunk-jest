@@ -47,7 +47,7 @@ yarn
 
 3. Start the development server
 ```sh
-yarn start
+yarn dev
 ```
 
 4. The application will be served on localhost:1234
