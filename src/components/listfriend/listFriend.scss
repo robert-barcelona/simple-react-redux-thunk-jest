@@ -2,8 +2,8 @@
 
 
 .list-friend {
-  $background-color: rgba(100,100,100,0.5);
-  @include friend-container($background-color,300px,400px);
+  $background-color: rgb(110, 135, 255);
+  @include friend-container($background-color,300px,425px);
   .friend-card {
     @include friend-card($background-color);
   }

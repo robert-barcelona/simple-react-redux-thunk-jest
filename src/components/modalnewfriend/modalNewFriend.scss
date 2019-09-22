@@ -1,15 +1,12 @@
 @import "../../styles/includes.scss";
 
-
 .modal-friend {
-  $background-color: rgba(100,100,100,1);
-  @include friend-container($background-color,800px,450px);
+  $background-color: rgba(110, 135, 255, 1);
+  @include friend-container($background-color, 800px, 450px);
   .friend-button {
-    margin-top:20px;
+    margin-top: 20px;
   }
   .friend-card {
     @include friend-card($background-color);
-
   }
 }
-

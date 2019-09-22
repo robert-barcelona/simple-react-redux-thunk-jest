@@ -6,8 +6,8 @@ import configureStore from "./redux/configure-store"
 import ReactModal from "react-modal"
 
 ReactModal.setAppElement("#root")
-ReactModal.defaultStyles.overlay.backgroundColor = "rgb(0,19,98)"
-ReactModal.defaultStyles.content.backgroundColor = "rebeccapurple"
+ReactModal.defaultStyles.overlay.backgroundColor = "rgba(111,130,180,0.8)"
+ReactModal.defaultStyles.content.backgroundColor = "rgb(228, 224, 197)"
 
 const store = configureStore()
 ReactDOM.render(
