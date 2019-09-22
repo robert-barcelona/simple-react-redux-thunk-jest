@@ -1,0 +1,54 @@
+ {
+    "gender": "female",
+    "name": {
+      "title": "ms",
+      "first": "malu",
+      "last": "mendes"
+    },
+    "location": {
+      "street": "7196 rua quinze de novembro ",
+      "city": "parnaíba",
+      "state": "rio grande do norte",
+      "postcode": 49770,
+      "coordinates": {
+        "latitude": "-75.9900",
+        "longitude": "6.0742"
+      },
+      "timezone": {
+        "offset": "+5:30",
+        "description": "Bombay, Calcutta, Madras, New Delhi"
+      }
+    },
+    "email": "malu.mendes@example.com",
+    "login": {
+      "uuid": "a9dbb9ab-7e57-4151-87c4-0084a6c6dd67",
+      "username": "crazybear152",
+      "password": "sauron",
+      "salt": "7uBgveIC",
+      "md5": "5b197a5f7fb83dd16747754f8b0e2a72",
+      "sha1": "071b76c75cede2d88fb44f8a8109812421647352",
+      "sha256": "420e8b4798407e8e4fb8ac25a37d39460b3085283b653ee8ee6aac09712203c0"
+    },
+    "dob": {
+      "date": "1973-06-06T03:06:09Z",
+      "age": 46
+    },
+    "registered": {
+      "date": "2006-11-03T17:34:04Z",
+      "age": 12
+    },
+    "phone": "(37) 4884-4494",
+    "cell": "(61) 2406-3154",
+    "id": {
+      "name": "",
+      "value": null
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/64.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/64.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/64.jpg"
+    },
+    "nat": "BR"
+  }
+
+

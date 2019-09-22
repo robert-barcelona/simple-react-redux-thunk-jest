@@ -1,0 +1,12 @@
+.friend-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .friend-list-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
