@@ -9,7 +9,7 @@ import {
   faAt
 } from "@fortawesome/free-solid-svg-icons";
 
-import PropTypes from "prop-types";
+import friendPropTypes from "./friendPropTypes";
 import "./friend.scss";
 
 const Friend = props => {
@@ -67,21 +67,7 @@ const Friend = props => {
 };
 
 Friend.propTypes = {
-  friend: PropTypes.shape({
-    name: PropTypes.shape({ first: PropTypes.string, last: PropTypes.string }),
-    email: PropTypes.string,
-    phone: PropTypes.string,
-    location: PropTypes.shape({
-      street: PropTypes.string,
-      city: PropTypes.string,
-      state: PropTypes.string,
-      postcode: PropTypes.number
-    }),
-    picture:PropTypes.shape({
-      large:PropTypes.string,
-      medium:PropTypes.string
-    })
-  })
+  friend: friendPropTypes
 };
 
 export default Friend;

@@ -1,9 +1,8 @@
-import axios from "axios";
 
 import {
   CACHE_NEW_FRIEND,
   CLEAR_NEW_FRIEND,
-  ADD_FRIEND,
+ // ADD_FRIEND,
   STORE_FRIEND,
   DELETE_FRIEND,
   ERROR,
@@ -12,8 +11,8 @@ import {
   SORT_FRIENDS_BY_NAME, STORE_MANY_FRIENDS
 } from "./action-types";
 
-import {logicGetFriend, persistData} from "../logic";
-import {PERSIST_FRIENDS} from "../helpers/Constants";
+import {logicGetFriend} from "../logic";
+//import {PERSIST_FRIENDS} from "../helpers/Constants";
 
 export const sortFriends = () => ({type: SORT_FRIENDS_BY_NAME});
 export const callingAPI = () => ({type: CALLING_API});

@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import Friend from "../friend/Friend";
 import { deleteFriend } from "../../redux/action-creators";
-import PropTypes from "prop-types";
+import friendPropTypes from "../friend/friendPropTypes"
 import './listFriend.scss'
 
 const ListFriend = props => {
@@ -22,10 +22,7 @@ const ListFriend = props => {
 };
 
 ListFriend.propTypes = {
-  friend: PropTypes.shape({
-    firstName: PropTypes.string,
-    lastName: PropTypes.string
-  })
+  friend: friendPropTypes
 };
 
 export default ListFriend;

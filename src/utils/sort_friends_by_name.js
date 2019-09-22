@@ -1,8 +1,8 @@
 export default (a, b) => {
-  if (a.lastName < b.lastName) {
+  if (a.name.last < b.name.last) {
     return -1;
   }
-  if (a.lastName > b.lastName) {
+  if (a.name.last > b.name.last) {
     return 1;
   }
   return 0;
