@@ -7,7 +7,7 @@
 
 ## About The Project
 
-A simple React/Redux application simulate a friend-gettting application. Instead of allowing the user to fill in the data, it uses 'pre-built' friends from RandomMe ([https://randomuser.me]). Redux and Redux-Thunk are used for state management, SASS for styling, Parcel for bundling, Jest for testing, and friend data is persisted to LocalStorage.
+A simple React/Redux application that simulates an address-book type application. Instead of allowing the user to fill in the data, it uses 'pre-built' friends from RandomMe ([https://randomuser.me]). Redux and Redux-Thunk are used for state management, SASS for styling, Parcel for bundling, Jest for testing, and friend data is persisted to LocalStorage.
 
 ### Built With
 
