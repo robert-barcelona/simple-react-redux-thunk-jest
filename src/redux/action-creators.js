@@ -37,12 +37,14 @@ export const addFriend = friend => (dispatch) => {
 
 export const getNewFriend = () => async dispatch => {
   try {
+    dispatch(error(''));
     dispatch(callingAPI());
     const friendData = await logicGetFriend();
     if (!friendData) throw new Error("Friend was not retrieved from API");
-    dispatch(finishedAPICall());
     dispatch(cacheNewFriend(friendData));
   } catch (e) {
     dispatch(error(e.message));
+  } finally {
+    dispatch(finishedAPICall());
   }
 };
