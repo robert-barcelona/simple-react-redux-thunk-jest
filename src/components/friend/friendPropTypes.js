@@ -1,20 +1,20 @@
+import { shape, string, number } from "prop-types"
 
-import {shape,string,number} from "prop-types"
-
-export default {
-  friend: shape({
-    name: shape({ first: string, last: string }),
-    email: string,
-    phone: string,
-    location: shape({
-      street: string,
-      city: string,
-      state: string,
-      postcode: number
+export default shape({
+  name: shape({ first: string, last: string }),
+  email: string,
+  phone: string,
+  location: shape({
+    street: shape({
+      name:string,
+      number:number
     }),
-    picture:shape({
-      large:string,
-      medium:string
-    })
+    city: string,
+    state: string,
+    postcode: number
+  }),
+  picture: shape({
+    large: string,
+    medium: string
   })
-};
+})

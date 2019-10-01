@@ -42,7 +42,7 @@ const Friend = props => {
           </p>
           <p>
             <FontAwesomeIcon icon={faMapPin} />
-            &nbsp;&nbsp;Address: {friend.location.street}
+            &nbsp;&nbsp;Address: {friend.location.street.number} {friend.location.street.name}
           </p>
           <p>
             <FontAwesomeIcon icon={faCity} />
