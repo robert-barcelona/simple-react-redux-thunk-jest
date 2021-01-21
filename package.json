@@ -47,7 +47,7 @@
     "bulma": "^0.7.5",
     "eslint-plugin-jest": "^22.17.0",
     "eslint-plugin-react": "^7.14.3",
-    "immer": "^4.0.0",
+    "immer": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "16.x",
     "react-detect-offline": "^2.4.0",
